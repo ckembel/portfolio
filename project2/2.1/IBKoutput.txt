@@ -1,0 +1,47 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     weather.symbolic
+Instances:    14
+Attributes:   5
+              outlook
+              temperature
+              humidity
+              windy
+              play
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances           8               57.1429 %
+Incorrectly Classified Instances         6               42.8571 %
+Kappa statistic                          0.0667
+Mean absolute error                      0.4911
+Root mean squared error                  0.5985
+Relative absolute error                103.137  %
+Root relative squared error            121.313  %
+Total Number of Instances               14     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.667     0.6        0.667     0.667     0.667      0.5      yes
+                 0.4       0.333      0.4       0.4       0.4        0.456    no
+Weighted Avg.    0.571     0.505      0.571     0.571     0.571      0.484
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 6 3 | a = yes
+ 3 2 | b = no
+
+
