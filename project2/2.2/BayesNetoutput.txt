@@ -1,0 +1,55 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.BMAEstimator -- -A 0.5
+Relation:     weather.symbolic-weka.filters.unsupervised.attribute.Remove-R2-weka.filters.unsupervised.attribute.Remove-R3
+Instances:    14
+Attributes:   3
+              outlook
+              humidity
+              play
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=3 #classindex=2
+Network structure (nodes followed by parents)
+outlook(3): play 
+humidity(2): play 
+play(2): 
+LogScore Bayes: -8.421671231874207
+LogScore BDeu: -15.61948826491967
+LogScore MDL: -22.668666463129632
+LogScore ENTROPY: -13.431965809476226
+LogScore AIC: -20.431965809476225
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances           9               64.2857 %
+Incorrectly Classified Instances         5               35.7143 %
+Kappa statistic                          0     
+Mean absolute error                      0.4734
+Root mean squared error                  0.4936
+Relative absolute error                 99.4131 %
+Root relative squared error            100.0487 %
+Total Number of Instances               14     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         1          0.643     1         0.783      0.211    yes
+                 0         0          0         0         0          0.211    no
+Weighted Avg.    0.643     0.643      0.413     0.643     0.503      0.211
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 9 0 | a = yes
+ 5 0 | b = no
+
+

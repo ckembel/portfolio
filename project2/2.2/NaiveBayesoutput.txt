@@ -1,0 +1,67 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     weather.symbolic-weka.filters.unsupervised.attribute.Remove-R4
+Instances:    14
+Attributes:   4
+              outlook
+              temperature
+              humidity
+              play
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                Class
+Attribute         yes     no
+               (0.63) (0.38)
+=============================
+outlook
+  sunny            3.0    4.0
+  overcast         5.0    1.0
+  rainy            4.0    3.0
+  [total]         12.0    8.0
+
+temperature
+  hot              3.0    3.0
+  mild             5.0    3.0
+  cool             4.0    2.0
+  [total]         12.0    8.0
+
+humidity
+  high             4.0    5.0
+  normal           7.0    2.0
+  [total]         11.0    7.0
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          10               71.4286 %
+Incorrectly Classified Instances         4               28.5714 %
+Kappa statistic                          0.3778
+Mean absolute error                      0.4141
+Root mean squared error                  0.4698
+Relative absolute error                 86.9546 %
+Root relative squared error             95.2295 %
+Total Number of Instances               14     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.778     0.4        0.778     0.778     0.778      0.667    yes
+                 0.6       0.222      0.6       0.6       0.6        0.667    no
+Weighted Avg.    0.714     0.337      0.714     0.714     0.714      0.667
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 7 2 | a = yes
+ 2 3 | b = no
+
+

@@ -1,0 +1,54 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.AODE -F 1
+Relation:     weather.symbolic-weka.filters.unsupervised.attribute.Remove-R2-weka.filters.unsupervised.attribute.Remove-R3
+Instances:    14
+Attributes:   3
+              outlook
+              humidity
+              play
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+The AODE Classifier
+Class yes: Prior probability = 0.63
+
+
+Class no: Prior probability = 0.38
+
+Dataset: weather.symbolic-weka.filters.unsupervised.attribute.Remove-R2-weka.filters.unsupervised.attribute.Remove-R3
+Instances: 14
+Attributes: 3
+Frequency limit for superParents: 1
+Correction: laplace
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          11               78.5714 %
+Incorrectly Classified Instances         3               21.4286 %
+Kappa statistic                          0.5116
+Mean absolute error                      0.3934
+Root mean squared error                  0.4372
+Relative absolute error                 82.6187 %
+Root relative squared error             88.6086 %
+Total Number of Instances               14     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.889     0.4        0.8       0.889     0.842      0.733    yes
+                 0.6       0.111      0.75      0.6       0.667      0.733    no
+Weighted Avg.    0.786     0.297      0.782     0.786     0.779      0.733
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 8 1 | a = yes
+ 2 3 | b = no
+
+

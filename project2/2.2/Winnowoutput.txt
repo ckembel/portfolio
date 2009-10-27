@@ -1,0 +1,58 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Winnow -I 10 -A 2.0 -B 0.5 -H -1.0 -W 2.0 -S 1
+Relation:     weather.symbolic-weka.filters.unsupervised.attribute.Remove-R3
+Instances:    14
+Attributes:   4
+              outlook
+              temperature
+              windy
+              play
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Winnow
+
+Attribute weights
+
+w0 4.0
+w1 2.0
+w2 2.0
+w3 4.0
+w4 2.0
+w5 2.0
+w6 0.001953125
+
+Cumulated mistake count: 51
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          10               71.4286 %
+Incorrectly Classified Instances         4               28.5714 %
+Kappa statistic                          0.2432
+Mean absolute error                      0.2857
+Root mean squared error                  0.5345
+Relative absolute error                 60      %
+Root relative squared error            108.3425 %
+Total Number of Instances               14     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.8        0.692     1         0.818      0.6      yes
+                 0.2       0          1         0.2       0.333      0.6      no
+Weighted Avg.    0.714     0.514      0.802     0.714     0.645      0.6  
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 9 0 | a = yes
+ 4 1 | b = no
+
+
